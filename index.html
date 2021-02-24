@@ -1,0 +1,134 @@
+<!--
+    <h1> -> abertura da tag
+        conteudo da tag
+    </h1> -> fechamento da tag
+    O conteúdo da abertura ao fechamento constitui um
+    Elemento html
+-->
+<h1>HTML</h1>
+<h1>Hypertext Markup Language</h1>
+
+
+<!-- 
+    Elementos vazios
+ -->
+<img src="" alt="">
+<input type="text">
+
+
+<!--
+    Atributos HTML
+    - informações extras ->Ex: imagem.png
+    - configurações ->Ex: texto
+-->
+<img src="imagem.png" alt="texto">
+
+
+<!--
+    Atributos booleanos
+    Ex: disabled
+-->
+<input type="text" disabled>
+
+
+<!--
+    Aspas
+    - omissão
+    - simples
+    - duplas
+    por via das dúvidas use aspas duplas
+-->
+<a href="https://google.com">link</a>
+
+
+<!--
+    Atributos globais
+    são atributos comuns a todos elementos HTML;
+    eles podem ser usados em todos os elementos, embora 
+    os atributos não tenham efeito em alguns elementos.
+
+    - class
+    - contenteditable
+    - data-*
+    - hidden
+    - id
+    - style
+    - tabindex
+    - title
+    - para mais atributos globais: https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes
+-->
+<div class="carrinho" tabindex="3" id="cart1">
+    <!-- Elementos dentro do carrinho -->
+    conteúdo
+    <!-- class: é usado para aplicar estilo CSS
+         e para poder-se acessar o elemento carrinho no javascrip -->
+</div>
+
+<div class="carrinho" contenteditable="true" id="cart2">
+    <!-- Elementos dentro do carrinho -->
+    conteúdo
+    <!-- contenteditable: é usado parapoder-se editar o conteúdo
+         de dentro da tag, depois que o mesmo ja se encontra
+         na página -->
+</div>
+
+<div class="carrinho" data-qualquer-nome-aqui="" id="cart3">
+    <!-- Elementos dentro do carrinho -->
+    <!-- data-*: expande os tipos de atributos que podem ser utilizados 
+         dentro do HTML para mais tarde poder se fazer logica com o JS-->
+</div>
+
+<div class="carrinho" hidden="" id="cart4">
+    <!-- Elementos dentro do carrinho -->
+    conteúdo
+    <!-- hidden: esconde uma tag-->
+</div>
+
+<div class="carrinho" tabindex="2" id="cart5" >
+    <!-- Elementos dentro do carrinho -->
+    conteúdo
+    <!-- id: cada tag deve possuir um id único, para que caso haja
+         uma refencia ao mesmo posteriormente não haja confusão
+    -->
+    <!-- Para repetir um nome use class -->
+</div>
+
+<div class="carrinho" style="color: brown;" id="cart6">
+    <!-- Elementos dentro do carrinho -->
+    conteúdo
+    <!-- style: serve para aplicar uma estilização ao seu html
+         normalmente não é usada diretamente em uma tag. -->
+</div>
+
+<div class="carrinho" tabindex="1" id="cart7">
+    <!-- Elementos dentro do carrinho -->
+    conteúdo
+    <!-- tabindex: ao navegar na pagina com a tecla tab o navegador
+         vai seguir a ordem estabelecida por tabindex-->
+</div>
+
+<div class="carrinho" title="borracha" id="cart8">
+    <!-- Elementos dentro do carrinho -->
+    conteúdo
+    <!-- title: aplica um título a tag -->
+</div>
+
+<!--
+    Aninhamento de tags
+    - hierarquia -> A tag "<em>" é filha da tag "<p>" que é filha da tag "<div>"
+    - fluxo -> Ordem em que as tags são lidas
+    - posicionamento dos elementos -> Algumas tags quebram linhas "<p>" e outras não "<em>"
+-->
+<div>
+    <p>
+        <a href="">Eu</a>
+        vou <em>escrever</em> um parágrafo
+        <p>Esse é um novo parágrafo</p>
+    </p>
+</div>
+
+
+<!--
+    O simbolo anterior é utilizado oara adicionar um comentario
+    os comentarios não aparecem na pagina.
+-->
