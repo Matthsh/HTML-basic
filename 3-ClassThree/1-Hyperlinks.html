@@ -1,0 +1,71 @@
+<!--  
+    Hyperlinks - Elemento Âncora: <a>
+
+        + Anatomia
+
+        + Atributos
+            - Globais -- <a> recebe atributos globais 
+            - href
+                - para onde iremos quando clicarmos no link?
+                    - url completa
+                    - fragmentos
+                    - email
+                    - telefone
+                    - e outros.
+            - download
+            - target
+                - _self (padrão)
+                - _blank
+-->
+<div>
+    <h1>Teste1</h1>
+    <ul>
+        <!-- <a href=""></a> faz um hypertexto que leva a pagina referenciada.-->
+        <li><a  href="https://google.com/">Conteúdo</a></li>
+
+        <!-- <a href="" target="_blank"></a> faz um hypertexto que leva a pagina referenciada,
+            porem em uma nova aba-->
+        <li><a href="https://github.com/Matthsh" target="_blank">Conteúdo</a></li>
+
+        <!-- <a href="" download=""></a> faz dowload do link de href a informação a se colocar
+            dentro de download direciona o download para um arquivo pré-selecionado do computador-->
+        <li><a href="https://source.unsplash.com/random" target="_blank" download="">Conteúdo</a></li>
+    </ul>
+</div>
+
+
+<div>
+    <h1>Teste2</h1>
+    <h2>Encontre-me</h2>
+    <ul>
+        <li><a href="https://github.com/Matthsh" target="_blank"><cite>Meu git</cite></a></li>
+
+        <!-- <a href="mailto:<email>"></a> Abre uma pagina para enviar um email diretamente 
+        para o email adicionado-->
+        <li><a href="mailto:MattheusMedina@outlook.com"><cite>Email</cite></a></li>
+        <!-- <li><a href="tel:<numero>"></a> Tenta ligar para o numero adicionado-->
+        <li><a href="tel:+5551981018080"><cite>Telefone</cite></a></li>
+    </ul>
+</div>
+
+<div>
+    <h1>Teste3</h1>
+    <h2>Sobre mim: </h2>
+    <ol>
+        <!-- <a href="#<fragmento>"></a> Cria o link de direcionamento para o fragmento-->
+        <li><a href="#Nascimento">Nascimento</a></li>
+        <li><a href="#Estudos">Estudos</a></li>
+        <li><a href="#Trabalho">Trabalho</a></li>
+    </ol>
+
+    <!-- id="<fragmento>" Local para onde o link do fragmento direcionara-->
+    <h3 id="Nascimento">Nascimento:</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis dolores sequi dolor, nisi dicta praesentium, nemo iste mollitia facere enim expedita ea eum architecto, perspiciatis est dolorum voluptatem libero.</p>
+    
+    <h3 id="Estudos">Estudos:</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, illo? At nulla, quas, facilis blanditiis libero minus impedit praesentium hic error porro illum, dignissimos sed deleniti distinctio voluptas neque mollitia?</p>
+
+    <h3 id="Trabalho">Trabalho:</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum iste omnis, praesentium repellendus quos dolore consectetur autem fugiat corporis quisquam deleniti voluptas, eius amet error vitae nostrum ipsam facere? Libero!</p>
+</div>
+
