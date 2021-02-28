@@ -6,7 +6,10 @@
 <table>
     <caption style="background-color:black">Produzidos vs Vendidos por loja</caption>
 
+    <!-- <colgroup> = Grupo de colunas-->
     <colgroup>
+
+        <!-- <col> = Uma coluna do grupo-->
         <col style="background-color:black">
         <col span="2"style="background-color:Red">
         <col span="2"style="background-color:blue">
@@ -14,27 +17,37 @@
 
     <thead>
         <tr>
+            <!-- rowspan altera a configuração da linha
+            no caso faz com que a linha em branco ocupe duas posiçoes-->
             <th rowspan="2"></th>
-            <th colspan="2" style="background-color:blue">Afonso Pena</th>
-            <th colspan="2" style="background-color:red">Antonia Pereira</th>
+
+            <!-- colspan altera a configuração da coluna
+            no caso faz com que os nomes ocupem duas colunas-->
+            <th colspan="2" style="background-color:blue" scope="colgroup">Afonso Pena</th>
+            
+            <!-- scope="colgroup" é um atributo que diz para o escopo que ele recebe um grupo de colunas-->
+            <th colspan="2" style="background-color:red" scope="colgroup">Antonia Pereira</th>
         </tr>
         <tr>
-            <th>Produzidos</th>
-            <th>Vendidos</th>
-            <th>Produzidos</th>
-            <th>Vendidos</th>
+
+            <!-- scope="col" diz para o escopo que ele recebe uma coluna-->
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <th>Vassouras</th>
+            <!-- scope="row" diz para o escopo que ele recebe uma linha-->
+            <th scope="row">Vassouras</th>
             <td>50</td>
             <td>30</td>
             <td>20</td>
             <td>20</td>
         </tr>
         <tr>
-            <th>Baldes</th>
+            <th scope="row">Baldes</th>
             <td>10</td>
             <td>10</td>
             <td>30</td>
